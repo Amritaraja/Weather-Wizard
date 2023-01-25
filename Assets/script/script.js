@@ -1,7 +1,7 @@
 let cityArray = JSON.parse(localStorage.getItem("cities")) || [];
 
 //gets users current location
-$.get("http://ipinfo.io", function(response) {
+$.get("https://ipinfo.io", function(response) {
     console.log(response.city, response.country);
     var currentCity = response.city
     city = currentCity;
@@ -11,7 +11,7 @@ $.get("http://ipinfo.io", function(response) {
 // Event listener function that gets users current browser location city
 $("#locationBtn").on("click", function(){
     console.log("clcick");
-    $.get("http://ipinfo.io", function(response) {
+    $.get("https://ipinfo.io", function(response) {
     var currentCity = response.city
     city = currentCity;
     fetchWeather(city)
