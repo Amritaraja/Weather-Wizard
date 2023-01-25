@@ -20,9 +20,11 @@ Weather dashboard that displays the weather for multiple cities. Displays the cu
 Continues to challenge skills in HTML, javascript, css as well as introduces new skills of intergrated third party API.
 
 ## Github link
-Repo link: https://github.com/Amritaraja/Taskr.git
-Page link: https://amritaraja.github.io/Taskr/
+Repo link: https://github.com/Amritaraja/Weather-Wizard.git
+
+
+Page link: https://amritaraja.github.io/Weather-Wizard/
 
 
 
-<img width="1250" alt="Screenshot 2023-01-10 at 7 50 04 PM" src="Assets/images/Screenshot 2023-01-16 at 7.28.08 PM.png">
+<img width="1250" alt="Screenshot of Weather Wizard application" src="Assets/Images/Screenshot.png">
