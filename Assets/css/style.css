@@ -1,0 +1,27 @@
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(120deg, rgba(255, 0, 0, 0.75), rgba(255, 217, 0, 0.812));
+}
+
+header,footer {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.30);
+        color: white;
+      }
+input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;  
+    padding: 1%;
+}
+::placeholder{
+    color: rgba(255,255,255,.5);
+    font-weight: lighter;
+    }
+/* .card-header1 {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.30);
+        color: white;
+        padding: 2%;
+} */
