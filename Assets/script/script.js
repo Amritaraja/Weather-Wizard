@@ -63,7 +63,7 @@ function displayHistory(){
     for (let i = 0; i < historyArray.length; i++) {
             let listedCity = $("<button>")
             listedCity.text(historyArray[i]);
-            listedCity.addClass("m-1 p-2 btn btn-outline-secondary rounded-0 listed");
+            listedCity.addClass("m-1 p-2 btn btn-outline-dark rounded-0 listed");
             $(".history").append(listedCity)
         }
         
@@ -96,7 +96,7 @@ function displayWeather(data){
 
 
     cityEl.textContent = data.name
-    currentDay.textContent = dayjs.unix(data.dt).format("M/D/YYYY")
+    currentDay.textContent = dayjs.unix(data.dt).format("ddd, MMM D, YYYY")
     currentTemp.textContent = "Temperature: " + data.main.temp + " F"
     currentWind.textContent = "Wind Speed: " + data.wind.speed + " mph"
     currentHumidity.textContent = "Humidity: " + data.main.humidity + " %"
@@ -131,7 +131,7 @@ for (let i = 0; i < data.list.length; i += 8){
     let forecastIcon = $("<img>");
     let forecastContainer = $("<div>");
 
-    forecastDay.text(dayjs.unix(data.list[i].dt).format("M/D/YYYY"));
+    forecastDay.text(dayjs.unix(data.list[i].dt).format("ddd, MMM D, YYYY"));
     forecastTemp.text("Temperature: " + data.list[i].main.temp + " F");
     forecastWind.text("Wind Speed: " + data.list[i].wind.speed + " mph")
     forecastHumidity.text("Humidity: " + data.list[i].main.humidity + " %")

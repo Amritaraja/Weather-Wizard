@@ -4,7 +4,7 @@ body {
     background-image: linear-gradient(120deg, rgba(255, 0, 0, 0.75), rgba(255, 217, 0, 0.812));
 }
 
-header,footer {
+header {
         border: none;
         background-color: rgba(0, 0, 0, 0.30);
         color: white;
