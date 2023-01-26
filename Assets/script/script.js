@@ -31,7 +31,7 @@ $("#searchBtn").on('click',function(){
     } else {
         cityInput.attr("placeholder", "Enter next city");
         cityInput.attr("class", "border border-3 border-success-subtle");
-        cityArray.push(city);
+        cityArray.unshift(city);
         localStorage.setItem("cities", JSON.stringify(cityArray));
         displayHistory();
         cityInput.val("")
@@ -57,7 +57,7 @@ $(".history").on('click',function(event) {
 // displays the searched city into search History
 function displayHistory(){
     // filters cityArray to only display the most recent searches
-   let historyArray = cityArray.reverse().slice(0,6);
+   let historyArray = cityArray.slice(0,6);
    console.log("updated aray is " + historyArray);
     $(".history").empty();
     for (let i = 0; i < historyArray.length; i++) {
